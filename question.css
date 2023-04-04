@@ -1,0 +1,144 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Ubuntu Mono', monospace;
+}
+
+.wrapper {
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    position: relative;
+}
+
+.title {
+    margin: auto;
+    width: fit-content;
+
+    padding-bottom: .4em;
+
+}
+
+.first {
+    padding-top: 1.2em;
+    font-size: 3.5rem;
+    font-weight: 700;
+
+}
+
+.topics {
+    font-size: xx-large;
+}
+
+.search {
+
+    display: grid;
+    width: 1120px;
+    margin: auto;
+    margin-top: 1.2em;
+    grid-template-columns: 150px 1fr 150px 60px;
+    grid-template-rows: 40px;
+
+}
+
+.Pick {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-style: groove;
+    border-width: 1px;
+    border-color: blue;
+    color: blue;
+}
+
+.InnerSearch {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+    border-style: groove;
+    border-width: 1px;
+    border-left: none;
+    font-size: larger;
+    color: rgb(108, 117, 125);
+}
+
+.checkList {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: large;
+    font-weight: 600;
+
+    background-color: rgb(200, 230, 201);
+    border-radius: .2em;
+}
+
+.book {
+    margin-left: 1.2em;
+    border-style: groove;
+    border-width: 1px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-color: green;
+    border-radius: .3em;
+    transition: all .5s;
+}
+
+.QuestionTable {
+    width: 65%;
+    margin: auto;
+    margin-top: 2.3em;
+}
+
+table,
+th,
+td {
+    border: solid 1px rgb(223, 226, 231);
+    padding: 10px;
+}
+
+th ,td {
+    height: 2.4em;
+    font-size: larger;
+    font-weight: 600;
+}
+
+td{
+    color:rgb(1,122,255);
+}
+table {
+    border-collapse: collapse;
+
+}
+.nav {
+    margin-top: 2.3em;
+    width: 100%;
+    height: 3em;
+    display: flex;
+    padding-top: .8em;
+    background-color: rgb(39, 174, 96);
+    position: relative;
+    bottom: -28em;
+}
+
+.navProject {
+
+    background-color: white;
+    height: fit-content;
+    padding: .4em;
+    font-weight: 600;
+    font-size: large;
+    border-radius: 1.2em;
+    margin-left: .3em;
+}
+.navLeft{
+    display: flex;
+    gap: .6em;
+    flex-direction: row;
+position: absolute;
+right: 1.2em;    
+}
+
