@@ -34,7 +34,8 @@
 .search {
 
     display: grid;
-    width: 1120px;
+    width: 65%;
+    max-width: 1120px;
     margin: auto;
     margin-top: 1.2em;
     grid-template-columns: 150px 1fr 150px 60px;
@@ -119,9 +120,10 @@ table {
     height: 3em;
     display: flex;
     padding-top: .8em;
+    position:fixed;
+bottom: 0;
     background-color: rgb(39, 174, 96);
-    position: relative;
-    bottom: -28em;
+    
 }
 
 .navProject {

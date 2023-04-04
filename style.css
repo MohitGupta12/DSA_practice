@@ -22,20 +22,20 @@
 
 .first {
     padding-top: 1.2em;
-    font-size: 3.5rem;
+    font-size: 3.5em;
     font-weight: 700;
 
 }
 
 .second {
-    font-size: 1.8rem;
+    font-size: 1.8em;
     font-weight: 200;
 
 }
 
 .content {
     width: 100vw;
-    height: 40rem;
+    height: 65%;
     overflow-y: hidden;
 
 }
@@ -43,22 +43,24 @@
 .innerContent {
     padding-top: 1em;
     margin: auto;
-    width: 65%;
+    
     height: 100%;
     overflow-y: scroll;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+max-width: 1180px;
+    gap:20px;
+row-gap: 25px;
 
-    gap: 2em;
 }
 
 .card {
     width: 23em;
-    height: 12em;
+    height: 14em;
     display: flex;
     background-color: rgb(171, 208, 247);
     border-radius: 2em;
-    position: relative;
+    position: static;
     overflow: hidden;
 
 }
@@ -108,9 +110,10 @@
     height: 3em;
     display: flex;
     padding-top: .8em;
+    position:fixed;
+bottom: 0;
     background-color: rgb(39, 174, 96);
-    position: relative;
-    bottom: 0;
+    
 }
 
 .navProject {
@@ -129,4 +132,20 @@
     flex-direction: row;
 position: absolute;
 right: 1.2em;    
+}
+@media (max-width:1300px) {
+    .card{
+        width: 20em;
+        height: 15em;
+    }
+    .start{
+        right: -8em;
+    }
+    .innerContent{
+        grid-template-columns: repeat(2,1fr);
+        gap: 7px;
+        width: 70%;
+        max-width: 998px;
+        margin: auto;
+    }
 }
