@@ -1,0 +1,132 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Ubuntu Mono', monospace;
+}
+
+.wrapper {
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    position: relative;
+}
+
+.title {
+    margin: auto;
+    width: fit-content;
+
+    padding-bottom: .4em;
+
+}
+
+.first {
+    padding-top: 1.2em;
+    font-size: 3.5rem;
+    font-weight: 700;
+
+}
+
+.second {
+    font-size: 1.8rem;
+    font-weight: 200;
+
+}
+
+.content {
+    width: 100vw;
+    height: 40rem;
+    overflow-y: hidden;
+
+}
+
+.innerContent {
+    padding-top: 1em;
+    margin: auto;
+    width: 65%;
+    height: 100%;
+    overflow-y: scroll;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 2em;
+}
+
+.card {
+    width: 23em;
+    height: 12em;
+    display: flex;
+    background-color: rgb(171, 208, 247);
+    border-radius: 2em;
+    position: relative;
+    overflow: hidden;
+
+}
+
+.start {
+    position: absolute;
+    right: -10em;
+    width: fit-content;
+    background-color: rgb(1, 122, 255);
+    padding: .29em;
+    font-size: large;
+    border-radius: 2em;
+    color: white
+}
+
+.CardContent {
+    position: relative;
+    margin: 1.2em;
+
+
+}
+
+/* .blur{
+    position: absolute;
+    z-index: 21;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: .2;
+} */
+.CardTitle {
+
+    font-weight: 600;
+    font-size: x-large;
+    padding-bottom: 1em;
+}
+
+.CardTitle2 {
+    font-weight: 400;
+    font-size: large;
+    padding-bottom: 1em;
+}
+
+.nav {
+    margin-top: 2.3em;
+    width: 100%;
+    height: 3em;
+    display: flex;
+    padding-top: .8em;
+    background-color: rgb(39, 174, 96);
+    position: relative;
+    bottom: 0;
+}
+
+.navProject {
+
+    background-color: white;
+    height: fit-content;
+    padding: .4em;
+    font-weight: 600;
+    font-size: large;
+    border-radius: 1.2em;
+    margin-left: .3em;
+}
+.navLeft{
+    display: flex;
+    gap: .6em;
+    flex-direction: row;
+position: absolute;
+right: 1.2em;    
+}
