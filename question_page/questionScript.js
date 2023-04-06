@@ -20,7 +20,7 @@ const ques_table_elm = document.querySelector('.QuestionTable');
 // When the response is received, convert it to JSON and store it in the jsonData variable
 // Call the buildTable function, passing in the jsonData variable as an argument
 // If there is an error, log it to the console
-fetch('data.json')
+fetch('../data/data.json')
     .then(response => response.json())
     .then(data => {
 

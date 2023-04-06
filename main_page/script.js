@@ -5,7 +5,7 @@ let jsonData;
 const container = document.querySelector('.innerContent');
 
 // Use the Fetch API to get the JSON data from data.json file
-fetch('data.json')
+fetch('../data/data.json')
     .then(response => response.json())
     .then(data => {
         // Assign the retrieved data to the jsonData variable
@@ -82,10 +82,8 @@ function BuildCard(data) {
         const card = document.getElementById(`card${i}`);
         card.addEventListener('click', function () {
             localStorage.setItem('clickedCard', card.id);
-            window.location.href = 'question.html';
+            window.location.href = '../question_page/question.html';
         });
-
-
 
     }
 }
