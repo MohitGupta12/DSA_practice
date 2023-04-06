@@ -81,8 +81,12 @@ function BuildCard(data) {
         // Get the card element by id and add a click event listener to redirect to question.html
         const card = document.getElementById(`card${i}`);
         card.addEventListener('click', function () {
+            localStorage.setItem('clickedCard', card.id);
             window.location.href = 'question.html';
         });
+
+
+
     }
 }
 
