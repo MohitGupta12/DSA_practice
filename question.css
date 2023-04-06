@@ -101,29 +101,32 @@ td {
     padding: 10px;
 }
 
-th ,td {
+th,
+td {
     height: 2.4em;
     font-size: larger;
     font-weight: 600;
 }
 
-td{
-    color:rgb(1,122,255);
+td {
+    color: rgb(1, 122, 255);
 }
+
 table {
     border-collapse: collapse;
 
 }
+
 .nav {
     margin-top: 2.3em;
     width: 100%;
     height: 3em;
     display: flex;
     padding-top: .8em;
-    position:fixed;
-bottom: 0;
+    position: fixed;
+    bottom: 0;
     background-color: rgb(39, 174, 96);
-    
+
 }
 
 .navProject {
@@ -136,11 +139,11 @@ bottom: 0;
     border-radius: 1.2em;
     margin-left: .3em;
 }
-.navLeft{
+
+.navLeft {
     display: flex;
     gap: .6em;
     flex-direction: row;
-position: absolute;
-right: 1.2em;    
+    position: absolute;
+    right: 1.2em;
 }
-

@@ -43,14 +43,14 @@
 .innerContent {
     padding-top: 1em;
     margin: auto;
-    
+
     height: 100%;
     overflow-y: scroll;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-max-width: 1180px;
-    gap:20px;
-row-gap: 25px;
+    max-width: 1180px;
+    gap: 20px;
+    row-gap: 25px;
 
 }
 
@@ -64,6 +64,14 @@ row-gap: 25px;
     overflow: hidden;
 
 }
+
+/* #card1:hover {
+    background-color: rgb(52, 232, 35);
+}
+
+#card10 {
+    background-color: rgb(35, 160, 232);
+} */
 
 .start {
     position: absolute;
@@ -79,11 +87,9 @@ row-gap: 25px;
 .CardContent {
     position: relative;
     margin: 1.2em;
-
-
 }
 
-/* .blur{
+/* .blur {
     position: absolute;
     z-index: 21;
     width: 100%;
@@ -91,6 +97,7 @@ row-gap: 25px;
     background-color: black;
     opacity: .2;
 } */
+
 .CardTitle {
 
     font-weight: 600;
@@ -104,19 +111,19 @@ row-gap: 25px;
     padding-bottom: 1em;
 }
 
-.nav {
+.bottom_nav {
     margin-top: 2.3em;
     width: 100%;
     height: 3em;
     display: flex;
     padding-top: .8em;
-    position:fixed;
-bottom: 0;
+    position: fixed;
+    bottom: 0;
     background-color: rgb(39, 174, 96);
-    
+
 }
 
-.navProject {
+.bottom_nav_Project {
 
     background-color: white;
     height: fit-content;
@@ -126,23 +133,27 @@ bottom: 0;
     border-radius: 1.2em;
     margin-left: .3em;
 }
-.navLeft{
+
+.bottom_nav_Left {
     display: flex;
     gap: .6em;
     flex-direction: row;
-position: absolute;
-right: 1.2em;    
+    position: absolute;
+    right: 1.2em;
 }
+
 @media (max-width:1300px) {
-    .card{
+    .card {
         width: 20em;
         height: 15em;
     }
-    .start{
+
+    .start {
         right: -8em;
     }
-    .innerContent{
-        grid-template-columns: repeat(2,1fr);
+
+    .innerContent {
+        grid-template-columns: repeat(2, 1fr);
         gap: 7px;
         width: 70%;
         max-width: 998px;
