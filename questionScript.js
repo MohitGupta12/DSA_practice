@@ -1,6 +1,17 @@
-
 // Declare a variable to hold the fetched data
 let jsonData;
+
+// Get the clicked card ID from localStorage
+const clickedCard = localStorage.getItem('clickedCard');
+
+// Extract the numeric ID from the clicked card ID by slicing the first four characters
+const clicked_id = clickedCard.slice(4);
+
+// Find the element with the ID "topic_name" and store it in a variable
+const topicName_elm = document.querySelector('#topic_name');
+
+// Find the element with the ID "total_question" and store it in a variable
+const totalQuestions_element = document.querySelector('#total_question');
 
 // Find the element with the class "QuestionTable" and store it in a variable
 const ques_table_elm = document.querySelector('.QuestionTable');
@@ -12,6 +23,7 @@ const ques_table_elm = document.querySelector('.QuestionTable');
 fetch('data.json')
     .then(response => response.json())
     .then(data => {
+
         jsonData = data;
         console.log(jsonData);
         console.log(data.data[0].questions.length);
@@ -22,19 +34,14 @@ fetch('data.json')
 // Define a function that takes a JSON object as an argument
 function buildTable(data) {
 
-    // Extract the questions array from the JSON object
-    let questions_List = data.data[0].questions;
+    // Extract the questions array from the JSON object using the clicked ID
+    let questions_List = data.data[clicked_id].questions;
 
-    //html structure that need to be created
-    /* <tr>
-        <td><input type="checkbox"></td>
-        <td>1</td>
+    // Set the topic name on the page to the topic name from the JSON object using the clicked ID
+    topicName_elm.innerText = data.data[clicked_id].topicName
 
-        <td><a href="">Reverse the array</a></td>
-        <td>50</td>
-
-        <td></td>
-    </tr> */
+    // Set the total number of questions on the page to the length of the questions array
+    totalQuestions_element.innerText = questions_List.length
 
     // Loop through the questions array
     for (let i = 0; i < questions_List.length; i++) {
@@ -84,5 +91,4 @@ function buildTable(data) {
 
     // Log the QuestionTable element to the console
     console.log(ques_table_elm);
-
 }
