@@ -1,0 +1,24 @@
+{
+  "name": "dsa-practice",
+  "version": "1.0.0",
+  "description": "",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MohitGupta12/DSA_practice-main.git"
+  },
+  "author": "Mohit",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MohitGupta12/DSA_practice-main/issues"
+  },
+  "homepage": "https://github.com/MohitGupta12/DSA_practice-main#readme",
+  "dependencies": {
+    "express": "^4.18.2",
+    "firebase": "^9.19.1",
+    "mongoose": "^7.0.3"
+  }
+}
