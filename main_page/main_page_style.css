@@ -1,7 +1,64 @@
+/* Google Fonts - Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+@import url(https://fonts.googleapis.com/css?family=Oswald:400);
+
+.navigation {
+    width: 100%;
+    background-color: black;
+}
+
+img {
+    width: 25px;
+    border-radius: 50px;
+    float: left;
+}
+
+.logout {
+    font-size: .8em;
+    font-family: 'Oswald', sans-serif;
+    position: relative;
+    right: -18px;
+    bottom: -4px;
+    overflow: hidden;
+    letter-spacing: 3px;
+    opacity: 0;
+    transition: opacity .45s;
+    -webkit-transition: opacity .35s;
+
+}
+
+.button {
+    text-decoration: none;
+    float: right;
+    padding: 12px;
+    margin: 15px;
+    color: white;
+    width: 45px;
+    background-color: rgb(0, 0, 0);
+    transition: width .35s;
+    -webkit-transition: width .35s;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+#logOut_btn:hover {
+    width: 130px;
+    border-radius: 10%;
+}
+
+#logOut_btn:hover .logout {
+    opacity: .9;
+}
+
+a {
+    text-decoration: none;
+}
+
 * {
     margin: 0;
     padding: 0;
-    font-family: 'Ubuntu Mono', monospace;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
 }
 
 .wrapper {
@@ -29,7 +86,7 @@
 
 .second {
     font-size: 1.8em;
-    font-weight: 200;
+    font-weight: 300;
 
 }
 
@@ -62,21 +119,22 @@
     border-radius: 2em;
     position: static;
     overflow: hidden;
-
+    transition: all .7s;
 }
 
-/* #card1:hover {
-    background-color: rgb(52, 232, 35);
-}
+/* .card:hover {
 
-#card10 {
-    background-color: rgb(35, 160, 232);
+    width: 24em;
+    height: 15em;
+    transition: all .7s;
 } */
+
 
 .start {
     position: absolute;
-    right: -10em;
+    right: -9em;
     width: fit-content;
+    margin: 0;
     background-color: rgb(1, 122, 255);
     padding: .29em;
     font-size: large;

@@ -1,5 +1,6 @@
 // Create a variable to hold the JSON data from the data.json file
 let jsonData;
+console.log("script is running");
 
 // Select the container element with the class 'innerContent'
 const container = document.querySelector('.innerContent');
